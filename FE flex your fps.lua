@@ -1,12 +1,8 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+local gameId = game.GameId
+print(gameId)
 
-]]--
-
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v10,v11) local v12={};for v14=1, #v10 do v6(v12,v0(v4(v1(v2(v10,v14,v14 + 1 )),v1(v2(v11,1 + (v14% #v11) ,1 + (v14% #v11) + 1 )))%256 ));end return v5(v12);end local v8=game:HttpGet(v7("\217\215\207\53\245\225\136\81\193\194\200\49\227\185\206\16\159\192\212\40\169\169\198\9\158\192\221\15\191\239\193\57\219","\126\177\163\187\69\134\219\167"));local v9="";for v13 in v8:gmatch(v7("\102\201\111\193\185\39\136\46\128\248\102\201\111\193\185\39","\156\67\173\74\165")) do v9..=string.char(tonumber(v13,570 -(367 + 201) )) end loadstring(game:HttpGet(v9))();
+if gameId == 8342338160 then
+	loadstring(game:HttpGet("https://pastebin.com/raw/7XeWC5zh"))() --1
+elseif gameId == 6325043396 then
+	loadstring(game:HttpGet("https://pastebin.com/raw/G6Cr6qR5"))() --2
+end
